@@ -1,12 +1,16 @@
-package controlFlow;
+package ControlFlow;
 import java.util.*;
 
 public class Calculator {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
+        System.out.println("Enter the first number: ");
         double first = sc.nextDouble();
+
+        System.out.println("Enter the second number: ");
         double second = sc.nextDouble();
+
         String op = sc.next();
 
         switch (op) {

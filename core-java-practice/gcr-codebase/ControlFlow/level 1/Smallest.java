@@ -1,16 +1,18 @@
-package controlFlow;
+package ControlFlow;
 import java.util.*;
 
 public class Smallest {
     public static void main(String[] args) {
-        int n1;
-        int n2;
-        int n3;
-
         Scanner sc = new Scanner(System.in);
-        n1 = sc.nextInt();
-        n2 = sc.nextInt();
-        n3 = sc.nextInt();
+
+        System.out.println("Enter the first number: ");
+        int n1 = sc.nextInt();
+
+        System.out.println("Enter the second number: ");
+        int n2 = sc.nextInt();
+
+        System.out.println("Enter the third number:  ");
+        int n3 = sc.nextInt();
 
         if(n1<n2 && n1<n3) {
             System.out.println("Yes");

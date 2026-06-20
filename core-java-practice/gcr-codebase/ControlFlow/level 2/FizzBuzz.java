@@ -1,4 +1,4 @@
-package controlFlow;
+package ControlFlow;
 import java.util.*;
 
 public class FizzBuzz {
@@ -7,8 +7,28 @@ public class FizzBuzz {
 
         int number = sc.nextInt();
 
+//        if (number > 0) {
+//            for (int i = 1; i <= number; i++) {
+//                if (i % 3 == 0 && i % 5 == 0) {
+//                    System.out.println("FizzBuzz");
+//                } else if (i % 3 == 0) {
+//                    System.out.println("Fizz");
+//                } else if (i % 5 == 0) {
+//                    System.out.println("Buzz");
+//                } else {
+//                    System.out.println(i);
+//                }
+//            }
+//        } else {
+//            System.out.println("Please enter a positive integer.");
+//        }
+
+
+        //Next Question is same but with while loop:
+
         if (number > 0) {
-            for (int i = 1; i <= number; i++) {
+            int i = 1;
+            while(i<=number){
                 if (i % 3 == 0 && i % 5 == 0) {
                     System.out.println("FizzBuzz");
                 } else if (i % 3 == 0) {
@@ -18,11 +38,11 @@ public class FizzBuzz {
                 } else {
                     System.out.println(i);
                 }
+                i++;
             }
         } else {
             System.out.println("Please enter a positive integer.");
         }
-
         sc.close();
     }
 }

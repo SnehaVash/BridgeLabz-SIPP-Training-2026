@@ -1,12 +1,12 @@
-package controlFlow;
+package ControlFlow;
 import java.util.*;
 
 public class PositiveNegativeOrZero {
     public static void main(String[] args) {
-        int n;
-
         Scanner sc = new Scanner(System.in);
-        n = sc.nextInt();
+
+        System.out.println("Enter a number: ");
+        int n = sc.nextInt();
 
         if(n>=1) {
             System.out.println("Positive");

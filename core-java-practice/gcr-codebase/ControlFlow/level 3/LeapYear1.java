@@ -1,10 +1,11 @@
-package controlFlow;
+package ControlFlow;
 import java.util.*;
 
 public class LeapYear1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
+        System.out.println("Enter a year: ");
         int year = sc.nextInt();
 
         if (year < 1582) {

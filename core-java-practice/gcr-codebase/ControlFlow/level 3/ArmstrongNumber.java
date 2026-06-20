@@ -1,10 +1,11 @@
-package controlFlow;
+package ControlFlow;
 import java.util.*;
 
 public class ArmstrongNumber {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
+        System.out.println("Enter a number: ");
         int number = sc.nextInt();
 
         int originalNumber = number;

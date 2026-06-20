@@ -1,15 +1,15 @@
-package controlFlow;
+package ControlFlow;
 import java.util.*;
 
 public class SpringSeason {
     public static void main(String[] args) {
-
-        int month;
-        int day;
-
         Scanner sc = new Scanner(System.in);
-        month = sc.nextInt();
-        day = sc.nextInt();
+
+        System.out.println("Enter a month: ");
+        int month = sc.nextInt();
+
+        System.out.println("Enter a day: ");
+        int day = sc.nextInt();
 
         if ((month == 3 && day >= 20) ||
                 (month == 4) ||

@@ -1,12 +1,12 @@
-package controlFlow;
+package ControlFlow;
 import java.util.*;
 
 public class VoteOrNot {
     public static void main(String[] args) {
-        int age;
-
         Scanner sc = new Scanner(System.in);
-        age = sc.nextInt();
+
+        System.out.println("Enter a age: ");
+        int age = sc.nextInt();
 
         if(age>=18) {
             System.out.println("The person's age is " + age + " and can vote");
