@@ -1,6 +1,5 @@
 package Interfaces;
 
-public interface Notifiable {
-
+public interface INotifiable {
     void sendAlert();
 }

@@ -1,19 +1,35 @@
 package Interfaces;
 
-public class FitnessDevice implements Trackable, Reportable, Notifiable {
+public class FitnessDevice implements ITrackable, IReportable, INotifiable {
+    int steps;
+    int calories;
+
+    public FitnessDevice(int steps, int calories) {
+        this.steps = steps;
+        this.calories = calories;
+    }
 
     @Override
     public void logActivity() {
-        System.out.println("Activity Logged: 5000 steps completed.");
+        System.out.println("Activity is Logged!");
+        System.out.println("Steps " +steps);
+        System.out.println("Calories Burned: " +calories);
     }
 
     @Override
     public void generateReport() {
-        System.out.println("Fitness Report Generated.");
+        System.out.println("FITNESS REPORT: ");
+        System.out.println("Total Steps: " +steps);
+        System.out.println("Calories Burned: " +calories);
     }
 
     @Override
     public void sendAlert() {
-        System.out.println("Alert: Time to drink water!");
+        int remaningSteps = 5000-steps;
+        if(steps<5000) {
+            System.out.println("You Need to Walk More: " +remaningSteps);
+        } else {
+            System.out.println("");
+        }
     }
 }
